@@ -1,0 +1,258 @@
+/*
+Description: Primary stylesheet for New York Central - Event Tickets
+Author:      Zachary MacKay
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/* Content styles */
+body  {	
+	background-image: url("../images/berry.jpg");
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+div#frame {
+	margin: 25px auto;
+	padding: 20px 30px 20px 20px;
+	width: 50%;
+	min-width: 900px;
+	background-color: #ffffff;	
+	background-image: linear-gradient(#ffffff 20%, #fdf7e8 70%, #ffffff 100%);
+	border: 2px solid #009926;
+	border-radius: 8px;
+	box-shadow: 0px 0px 90px 2px #008020;
+}
+
+p {
+	margin: 20px 0px;
+}
+
+/* Link styles */
+a {
+	color: #008020; 
+}
+
+a:link, a:visited { 
+	text-decoration: none; 
+}
+
+a:hover, a:focus { 
+    text-decoration: underline; 
+}
+
+/* Header */
+header {
+	height: 160px;
+	border-bottom: 2px solid #e8b417;
+}
+	
+header img { 
+	float: left; 
+} 
+
+header div#header-line-1 {
+	font-size: 300%;
+	font-weight: bold;	
+	text-align: right;
+	color: #ecc03b;
+	text-shadow: 2px 2px 2px black;
+}
+
+header div#header-line-2 {
+	font-size: 130%;
+	font-weight: bold;
+	text-align: right;
+	font-style: italic;
+	color: #008020;
+}
+
+/* aside */
+aside {
+	width: 230px;
+	float: left;
+	margin: 30px 10px 0px 0px;
+}
+
+aside div.sidebar-title {
+	font-size: 115%;
+	font-weight: bold;
+	color: #d1a215;
+}
+
+aside ul {
+	margin: 15px 0px 0px 15px;
+}
+
+aside ul li {
+	margin: 15px 0px 0px 0px;
+}
+
+aside ul li a{
+	font-style: italic;
+	font-size: 90%;
+}
+
+/* Main */
+main {
+	margin: 20px 0;
+	padding-left: 20px;
+	float: left;
+	width: 638px;
+	min-height: 600px;
+	border-left: 2px solid #e8b417;
+}
+
+main h1 { 
+	margin: 0;
+	font-size: 200%;
+}
+
+main h1:first-letter { 
+	font-size: 240%;
+}
+
+main h2 {
+	margin: 25px 0px;
+	font-size: 125%;
+}
+
+main h3 {	
+	font-size: 110%;
+}
+
+main ul#product-categories {
+	list-style-type: none;
+}
+
+main ul#product-categories li {
+	margin: 35px 0px;
+}
+
+main ul#product-categories h3 {
+	margin-top: 10px;
+}
+
+main ul#product-categories p{
+	margin-top: 5px;
+}
+
+main ul#product-categories img {
+	border: 2px solid #e8b417;
+	border-radius: 10px;
+	box-shadow: 0px 0px 6px 2px #ecc03b;
+}
+
+/* the styles for the navigation menu */
+#nav_menu {
+	margin-top: 2px;
+}
+
+#nav_menu ul {
+	list-style-type: none;
+	position: relative;
+}
+
+#nav_menu ul li {
+	float: left;
+}
+
+#nav_menu ul li a {
+    background-image: linear-gradient(#fdf7e8 15%, #ffffff 55%, #fdf7e8 100%);
+	width: 180px;
+	padding: 1em 0;
+	display: block;
+    text-align: center;    
+    text-decoration: none;  
+	font-weight: bold;
+}
+
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	color: #d1a215;
+}
+
+#nav_menu a.current, #nav_menu a.current:hover, #nav_menu a.current:focus {
+	color: #d1a215;	
+	font-weight: bold;
+}
+
+/*Form Styles*/
+fieldset {
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+legend {
+	margin-bottom: 10px;
+	color: #919191;
+	font-weight: bold;
+	font-size: 85%;
+}
+
+label {
+	font-size: 90%;
+	text-align: right;
+	float: left;
+	width: 15em;
+	margin-right: 5px;
+}
+
+input {
+	font-size: 90%;
+	margin-bottom: 6px;
+	width: 15em;
+}
+
+select {
+	font-size: 90%;
+	margin-bottom: 6px;
+	width: 15em;
+}
+
+input:required {
+	border: 2px solid #e8b417;
+}
+
+input:valid {
+	border: 1px solid black;
+}
+
+#payment_method label{
+	float: none;
+}
+
+input[type="radio"]{
+	width: auto;
+	margin-left: 40px;
+}
+
+#expiration_month {
+	width: 7em;
+}
+
+#expiration_year {
+	width: 5em;
+}
+
+#submit {
+	width: 10em;
+	margin-left: 10em;
+}
+
+#reset {
+	width: 10em;
+}
+
+/* Footer */
+footer {
+	clear: left;
+	border-top: 2px solid #e8b417;
+}
+
+footer p {
+	font-size: 80%;
+	text-align: center;
+}
